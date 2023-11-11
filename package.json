@@ -1,0 +1,39 @@
+{
+    "name": "matter.js-java",
+    "version": "0.1.0",
+    "description": "",
+    "scripts": {
+        "clean": "build clean",
+        "build": "build",
+        "build-clean": "build --clean",
+        "start": "run src/main/ts/app.ts",
+        "webpack": "webpack --mode production",
+        "webpack-dev": "webpack --mode development"
+    },
+    "devDependencies": {
+        "@types/node": "^20.9.0",
+        "@types/yargs": "^17.0.31",
+        "ts-loader": "^9.4.4",
+        "typescript": "^5.2.2",
+        "webpack": "^5.88.2",
+        "webpack-cli": "^5.1.4"
+    },
+    "dependencies": {
+        "@project-chip/matter.js": "^v0.6.1-alpha.0-20231109-9f2ed08",
+        "assert": "^2.1.0",
+        "browserify": "^17.0.0",
+        "events": "^3.3.0",
+        "path-browserify": "^1.0.1",
+        "util": "^0.12.5",
+        "yargs": "^17.7.2"
+    },
+    "files": [
+        "dist/**/*",
+        "src/main/ts/**/*",
+        "LICENSE",
+        "README.md"
+    ],
+    "publishConfig": {
+        "access": "public"
+    }
+}
